@@ -1,0 +1,8 @@
+.accordion-item{
+    background-color: var(--light_color);
+    border: none;
+}
+.accordion-button{
+    color: var(--base_color);
+    font-weight: bold;
+}

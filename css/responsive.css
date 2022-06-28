@@ -1,0 +1,209 @@
+@media (min-width:0px){
+    #bg-container{
+        background-size: cover;
+        background-position: center;
+    }
+    .bg-login{
+        top:100%;
+        left:50%;
+        width: 90%;
+    }
+    #search-icon{
+        display: block!important;
+    }
+    #global-search-con{
+        display: none!important;
+    }
+    .settings{
+        display: flex!important;
+    }
+    #sidenav{
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0%;
+        width: 80vw;
+        height: 88vh;
+    }
+    #header-container{
+        position: fixed;
+        top: 0px;
+        z-index: 999;
+    }
+    #main-container{
+        margin-top: 85px!important;
+    }
+    .user-account,
+    .notifs{
+        display: none!important;
+    }
+    .settings{
+        display: flex!important;
+    }
+    .burger-menu{
+        display: block;
+        right: 0%;
+    }
+    .dataTables_length{
+        width: 45%;
+        padding-bottom: 1rem;
+    }
+    .dataTables_filter{
+        width: 50%;
+    }
+    #statistics{
+        grid-template-columns: 100%;
+    }
+    #statistics .statistic-item{
+        width: 100%;
+    }
+    .brand-nav-logo{
+        display: none;
+    }
+    .brand-header-logo{
+        display: block;
+    }
+    #btn-add-staff label,
+    #btn-add-disease label{
+        display: none;
+    }
+    .dropdown-icon::before{
+        top: -.4rem;
+        right: 1.2rem;
+    }
+    .footer-flexbox{
+        grid-template-columns: 100%;
+    }
+}
+@media (min-width:324px){
+    .bg-login{
+        top:100%;
+        left:50%;
+        width: 70%;
+    }
+    .dataTables_length{
+        width: 30%;
+    }
+    .dataTables_filter{
+        width: 30%;
+    }
+}
+@media (min-width: 520px){
+    #sidenav{
+        width: 45vw;
+    }
+}
+@media (min-width:620px){
+    .bg-login{
+        top:100%;
+        left:50%;
+        width: 60%;
+    }
+    #sidenav{
+        width: 40vw;
+    }
+    #btn-add-staff label,
+    #btn-add-disease label{
+        display: block!important;
+    }
+}
+@media (min-width:768px){
+    #bg-container{
+        background-size: cover;
+    }
+    .bg-login{
+        top:50%;
+        left:100%;
+    }
+    .dataTables_length,
+    .dataTables_filter{
+        width: auto;
+    }
+    .user-account,
+    .notifs{
+        display: flex!important;
+    }
+    #search-icon{
+        display: none!important;
+    }
+    #global-search-con{
+        display: block!important;
+    }
+    .settings{
+        display: none!important;
+    }
+    #sidenav{
+        width: 32vw;
+    }
+    .dropdown-icon::before{
+        top: -.4rem;
+        left: 1.2rem;
+    }
+    #statistics{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #statistics .statistic-item{
+        width: 22rem;
+    }
+    .footer-flexbox{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+@media (min-width: 920px){
+    #sidenav{
+        width: 30vw;
+    }
+    .footer-flexbox{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media (min-width:1050px){
+    .bg-login{
+        top:50%;
+        left:100%;
+        width: 40%;
+    }
+    #sidenav{
+        width: 27vw;
+    }
+    #statistics{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #statistics .statistic-item{
+        width: 20rem;
+    }
+}
+@media (min-width:1220px){
+    #statistics{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #statistics .statistic-item{
+        width: 15rem;
+    }
+}
+@media (min-width: 1330px){
+    #sidenav{
+        display: block!important;
+        position: sticky;
+        top: 0%;
+        left: 0%;
+        height: 100vh;
+    }
+    #header-container{
+        position: static;
+        z-index: 0;
+    }
+    #main-container{
+        margin-top: 0px!important;
+    }
+    .brand-nav-logo{
+        display: block;
+    }
+    .brand-header-logo{
+        display: none;
+    }
+    .burger-menu{
+        display: none;
+    }
+}

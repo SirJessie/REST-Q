@@ -1,0 +1,35 @@
+.act_logs_wrapper{
+    background-color: var(--base_color);
+    border-radius: 5px;
+}
+.act_logs_wrapper h5, .session_logs_wrapper h5{
+    color: #fff;
+    background-color: var(--base_color);
+}
+.act_logs_scroll{
+    overflow-y: auto;
+    max-height: 80vh;
+}
+.act_logs_scroll::-webkit-scrollbar{
+    width: 10px;
+}
+.act_logs_scroll::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: var(--light_color);
+    border:solid 2px var(--base_color);
+}
+.act_logs_scroll .act_logs_item{
+    font-size: 12px;
+    margin-bottom: .2rem;
+    background-color: #fff;
+    padding: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.act_logs_scroll .act_logs_item:last-child{
+    margin-bottom: 0rem;
+}
+.act_logs_scroll .act_logs_item i{
+    font-size: 16px;
+}

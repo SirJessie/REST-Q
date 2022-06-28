@@ -1,0 +1,111 @@
+#sidenav{
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-image: linear-gradient(to bottom, #529BF2, #11418f 50%);
+    color:var(--light_color);
+    z-index: 99;
+    transition: .5s ease-in-out;
+}
+#sidenav::-webkit-scrollbar{
+    width: 10px;
+}
+#sidenav::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: transparent;
+}
+#sidenav::-webkit-scrollbar-thumb:hover{
+    background-color: var(--base_color);
+    border:solid 2px var(--light_color);
+}
+#sidenav nav ul .navbar-text{
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--light_color);
+}
+#sidenav nav ul .nav-item{
+    margin: .2rem 0;
+}
+#sidenav nav ul li .nav-link{
+    color: var(--light_color);
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 1rem .8rem .4rem .8rem;
+    display: flex;
+    font-size: 16px;
+    
+}
+#sidenav nav ul li ul .nav-link{
+    font-size: 13px;
+    padding: .7rem;
+    padding-left: 2rem;
+    font-weight: 700;
+}
+#sidenav nav ul li .nav-link:hover,
+#sidenav nav ul li .nav-link:focus{
+    background-color: #07224d;
+}
+#btn-menu:checked + #sidenav{
+    display: block;
+}
+.menu-btn{
+    z-index: 999;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    outline: none;
+    border: none;
+}
+.menu-burger{
+    width: 30px;
+    height: 4px;
+    background-color: var(--base_color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+    transition: all .5s ease-in-out;
+}
+.menu-burger::before,
+.menu-burger::after{
+    position: absolute;
+    content: '';
+    right: 12%;
+    width: 30px;
+    height: 4px;
+    background-color: var(--base_color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,1,0,.5);
+    transition: all .5s ease-in-out;
+}
+.menu-burger::before{
+    transform: translateY(-10px);
+}
+.menu-burger::after{
+    transform: translateY(10px);
+}
+.menu-btn:hover .menu-burger,
+.menu-btn:hover .menu-burger::after,
+.menu-btn:hover .menu-burger::before{
+    background-color: var(--light_color);
+}
+#main-container{
+    background-color: var(--light_color);
+    
+}
+.nav-button-bar ul .nav-item button{
+    padding: .8rem;
+    color: var(--base_color);
+    font-size: 14px;
+    text-align: center;
+    border:none;
+    outline: none;
+}
+.nav-button-bar ul .nav-item button:hover{
+    background-color: var(--dark_color);
+    border-radius: 5px;
+}

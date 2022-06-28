@@ -1,0 +1,296 @@
+:root{
+    --base_color: #0E387A;
+    --dark_color: #8FB3DC;
+    --light_color: #DAE3F3;
+}
+@font-face {
+    font-family: brandFont;
+    src: url(../css/fonts/DAGGERSQUARE.otf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+
+}
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+body::-webkit-scrollbar{
+    width: 12px;
+    background-color: var(--dark_color);
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: var(--base_color);
+    border:solid 2px var(--dark_color);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--base_color);;
+    min-height: 100vh;
+}
+label{
+    font-weight: bold!important;
+}
+.clickable-label{
+    cursor: pointer;
+}
+.clickable-label:hover{
+    color:rgba(143,179,220)
+}
+#bg-container{
+    min-height: 100vh;
+    background-image: url('../resources/images/System/BG_Wallpaper.png');
+    background-repeat: no-repeat;
+}
+.bgl-template{
+    background-color: rgba(14,56,122, .7);
+    height: 100%;
+}
+.bgr-template{
+    background-color: rgba(143,179,220, .7);
+}
+.bg-login{
+    box-shadow: 0 5px 20px rgba(0,0,0);
+    background-color: var(--light_color);
+    margin:0;
+}
+.login-input{
+    border:solid 1px var(--base_color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+table{
+    --bs-table-hover-color: var(--base_color);
+    --bs-table-hover-bg: var(--light_color);
+    overflow: hidden;
+}
+.dataTables_length,
+.dataTables_info,
+.dataTables_filter{
+    color: var(--base_color);
+}
+
+tbody{
+    background-color: var(--light_color);
+    border-top: solid 1px var(--dark_color);
+    border-bottom: solid 1px var(--dark_color);
+}
+.table-container{
+    border-top: solid 2px var(--dark_color);
+    border-bottom: solid 2px var(--dark_color);
+    font-weight: bold;
+}
+tr label, tr input[type=checkbox]{
+    cursor: pointer;
+}
+tr:hover td{
+    background-color: var(--dark_color);
+}
+td,th{
+    user-select: none;
+    padding: 1rem!important;
+    color:var(--base_color);
+}
+td{
+    font-weight: lighter;
+}
+.table-responsive::-webkit-scrollbar{
+    height: 12px;
+}
+.table-responsive::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: var(--base_color);
+    border:solid 2px var(--light_color);
+}
+
+.icon-btn {
+    outline: none;
+    border: none;
+    color: var(--base_color);
+    padding: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: ease-in-out 1s;
+}
+.icon-btn span{
+    color: var(--base_color);
+    font-size: 12px;
+    font-weight: bold;
+}
+.logout-btn{
+    color: var(--light_color);
+    background-color: var(--base_color);
+    font-size: 12px;
+}
+.logout-btn:hover{
+    color:#fff;
+}
+.dropdown-user {
+    width: 200px;
+}
+.dropdown-user .unameBox{
+    width: 100%;
+    padding: 5px;
+    height: 60px;
+    
+    background-color: var(--base_color);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown-user .unameBox a img{
+    height: 100%;
+}
+.dropdown-user .unameBox span a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Darker background on mouse-over */
+.icon-btn:hover {
+    color: #fff;
+}
+.img-btn{
+    margin: 12px;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img-btn img{
+    width: 100%;
+    height: 100%;
+}
+.dropdown-icon{
+    position: absolute;
+    top: 80px;
+    line-height: 10px;
+    background-color: white;
+    z-index: 99;
+    display: none;
+}
+.dropdown-icon .nav-link{
+    padding: 1rem 1.5rem;
+    color: var(--base_color);
+    font-size: 14px;
+    font-weight: 600;
+}
+.dropdown-icon .nav-link:hover{
+    background-color: rgba(14,56,122, .3);
+}
+.brand-logo{
+    display: flex;
+    justify-content: center;
+}
+.brand-logo img{
+    width: 70%;
+    height: 80px;
+    margin: 1.2rem 0 0 0;
+}
+.brand-nav-logo img{
+    height: 60px;
+    margin: .5rem 0 0 1.8rem;
+}
+.brand-header-logo img{
+    height: 60px;
+}
+.btn-outline-base_color{
+    border: solid 1px var(--base_color);
+    color: var(--base_color);
+}
+.btn-outline-base_color:hover{
+    background-color: var(--base_color);
+    color: var(--light_color);
+}
+.btn-base_color{
+    background-color: var(--base_color);
+    color: var(--light_color);
+    font-weight: bold;
+}
+
+.btn-base_color:hover{
+    opacity: .9;
+    color: var(--light_color);
+}
+.btn-dark_color:hover,
+.btn-light_color:hover{
+    opacity: .9;
+    color: var(--base_color);
+}
+.btn-dark_color{
+    background-color: var(--dark_color);
+    color: var(--base_color);
+    font-weight: bold;
+}
+.btn-light_color{
+    background-color: var(--light_color);
+    color: var(--base_color);
+    font-weight: bold;
+}
+#header-container{
+    background-color: var(--dark_color);
+}
+#footer-container{
+    background-color: var(--base_color);
+    color: #fff;
+}
+.footer-flexbox{
+    display: grid;
+    padding: 1rem;
+}
+.footer-flexbox .footer-item{
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    font-size: 14px;
+}
+.footer-flexbox .footer-item:first-child{
+    width: 240px;
+}
+.footer-flexbox .footer-item:first-child span a{
+    text-decoration: underline;
+}
+.footer-flexbox .footer-item:nth-child(4) a, .footer-flexbox .footer-item:nth-child(5) a{
+    text-decoration: underline;
+}
+.footer-flexbox .footer-item .CompanyText{
+    font-size: 25px;
+    font-family: 'Agency FB';
+    font-weight: bold;
+}
+.footer-flexbox .footer-item .CompanyText span:last-child{
+    color: var(--dark_color);
+}
+.footer-flexbox .footer-item img{
+    width: 4rem;
+    height: 2rem;
+}
+.footer-flexbox .footer-item a{
+    text-decoration: none;
+    color: #fff;
+}
+.platform-item{
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.infoWindowContent{
+    background-color: var(--base_color);
+    width: 12rem;
+}
+.infoWindowContent img{
+    width: 100%;
+    height: 10rem;
+}
+.infoWindowContent .infoWindowBody{
+    display: flex;
+    flex-direction: column;
+    padding: .5rem .3rem;
+    color: #fff;
+}
